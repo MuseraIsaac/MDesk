@@ -157,7 +157,7 @@ function doUpdateDb()
 
     if (!$update->isUpdatedSchemaConsistent()) {
         $migration->displayError(
-            __('The database schema is not consistent with the current GLPI version.')
+            __('The database schema is not consistent with the current MiDesk version.')
             . "\n"
             . sprintf(
                 __('It is recommended to run the "%s" command to see the differences.'),
@@ -213,7 +213,7 @@ echo "<!DOCTYPE html>";
 echo "<html lang='fr'>";
 echo "<head>";
 echo "<meta charset='utf-8'>";
-echo "<title>Setup GLPI</title>";
+echo "<title>Setup MiDesk</title>";
 //JS
 echo Html::script("public/lib/base.js");
 echo Html::script("js/glpi_dialog.js");
@@ -224,8 +224,8 @@ echo "</head>";
 echo "<body>";
 echo "<div id='principal'>";
 echo "<div id='bloc'>";
-echo "<div id='logo_bloc'></div>";
-echo "<h2>GLPI SETUP</h2>";
+//echo "<div id='logo_bloc'></div>";
+echo "<h2>MiDesk SETUP</h2>";
 echo "<br><h3>" . __('Upgrade') . "</h3>";
 
 if (($_SESSION['can_process_update'] ?? false) === false) {
@@ -234,13 +234,13 @@ if (($_SESSION['can_process_update'] ?? false) === false) {
     echo "<h3><span class='migred'>" . __('Impossible to accomplish an update by this way!') . "</span>";
     echo "<p>";
     echo "<a class='btn btn-primary' href='../index.php'>
-        " . __('Go back to GLPI') . "
+        " . __('Go back to MiDesk') . "
      </a></p>";
     echo "</div>";
 } elseif (empty($_POST["continuer"]) && empty($_POST["from_update"])) {
     // step 1    avec bouton de confirmation
     echo "<div class='center'>";
-    echo "<h3 class='my-4'><span class='migred p-2'>" . sprintf(__('Caution! You will update the GLPI database named: %s'), $DB->dbdefault) . "</h3>";
+    echo "<h3 class='my-4'><span class='migred p-2'>" . sprintf(__('Caution! You will update the MiDesk database named: %s'), $DB->dbdefault) . "</h3>";
 
     echo "<form action='update.php' method='post'>";
     if (!VersionParser::isStableRelease(GLPI_VERSION)) {
