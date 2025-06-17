@@ -71,7 +71,7 @@ function header_html($etape)
     echo "<html lang='fr'>";
     echo "<head>";
     echo "<meta charset='utf-8'>";
-    echo "<title>Setup GLPI</title>";
+    echo "<title>Setup MiDesk</title>";
 
    // CFG
     echo Html::getCoreVariablesForJavascript();
@@ -89,8 +89,8 @@ function header_html($etape)
     echo "<body>";
     echo "<div id='principal'>";
     echo "<div id='bloc'>";
-    echo "<div id='logo_bloc'></div>";
-    echo "<h2>GLPI SETUP</h2>";
+    //echo "<div id='logo_bloc'></div>";
+    echo "<h2>MiDesk SETUP</h2>";
     echo "<br><h3>" . $etape . "</h3>";
 }
 
