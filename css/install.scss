@@ -43,6 +43,8 @@ $is-dark: false !default;
 
 body {
     background-color: #1b2f62;
+    color: #f5f5f5;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #principal {
@@ -50,12 +52,16 @@ body {
     text-align: center;
     margin: auto;
     padding: 40px;
-    color: #fff;
+    color: #f5f5f5;
 }
 
 a {
-    color: #fec95c;
+    color: #ffaa00;
     font-weight: bold;
+    text-decoration: none;
+}
+a:hover {
+    color: #ffcc33;
 }
 
 #bloc {
@@ -64,102 +70,110 @@ a {
     text-align: left;
     position: relative;
     padding: 10px;
-    background: #3a5693;
+    background: #2f4c81;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 #logo_bloc {
     position: absolute;
     top: -25px;
-    padding: 0;
-    margin: 0;
     width: 145px;
     height: 80px;
-    background: url("../pics/login_logo_glpi.png")  no-repeat;
+    background: url("../pics/login_logo_glpi.png") no-repeat center;
 }
 
 p {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px;
+    color: #d0d0d0;
 }
 
 .tab_check {
     padding: 10px;
-    background-color: #fff;
-    color: #000;
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 6px;
 }
 
 .tab_check th {
     font-size: 14px;
     font-weight: bold;
+    color: #1b2f62;
 }
 
 .tab_check td {
     font-size: 12px;
-    border-bottom: 1px solid #bbb;
+    border-bottom: 1px solid #ccc;
+    color: #444;
 }
 
 .tab_check td i.fas,
 .tab_check td i.fa-solid {
     font-size: 12px;
     margin-right: 3px;
+    color: #ffaa00;
 }
 
-.red {
-    color: red;
+.red, .migred {
+    color: #fff;
+    background-color: #e74c3c;
 }
 
 .missing {
-    color: orange;
-}
-
-.migred {
-    color: white;
-    background-color: red;
+    color: #ffaa00;
 }
 
 .green {
-    color: green;
+    color: #2ecc71;
 }
 
 h2 {
     text-align: center;
-    color: #fec95c;
+    color: #ffaa00;
 }
 
 h3 {
     text-align: center;
+    color: #f5f5f5;
 }
 
 .block {
     display: inline-block;
     width: 300px;
-    color: #000;
+    color: #f5f5f5;
 }
 
 .license-container {
     width: 575px;
 
     textarea {
-        color: rgb(32, 32, 32);
-        margin: 20px auto;
-        white-space: pre-line;
+        color: #333;
+        background-color: #fdfdfd;
+        padding: 10px;
+        border-radius: 6px;
     }
 }
 
 .alert:not(.alert-important) {
-    color: #000;
+    color: #1b2f62;
+    background-color: #ffedcc;
 }
 
-/** Tabler override for install **/
 .form-selectgroup-boxes .form-selectgroup-label {
-    color: #000;
+    color: #1b2f62;
 }
 
 .form-control {
-    color: rgb(32, 32, 32) !important;
+    color: #1b2f62 !important;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .popover.validation-messages {
     max-width: none;
     white-space: nowrap;
+    background-color: #ffe8e8;
+    color: #a94442;
 }
+
