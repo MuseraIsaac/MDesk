@@ -42,9 +42,9 @@ $is-dark: false !default;
 /*  ############# Definition des styles de l'install et de l'update ############# */
 
 body {
-    background-color: #1b2f62;
-    color: #f5f5f5;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #101820;
+    color: #f0f0f0;
+    font-family: "Helvetica Neue", sans-serif;
 }
 
 #principal {
@@ -52,16 +52,16 @@ body {
     text-align: center;
     margin: auto;
     padding: 40px;
-    color: #f5f5f5;
+    color: #f0f0f0;
 }
 
 a {
-    color: #ffaa00;
+    color: #e3a008;
     font-weight: bold;
     text-decoration: none;
 }
 a:hover {
-    color: #ffcc33;
+    color: #ffc23d;
 }
 
 #bloc {
@@ -70,9 +70,9 @@ a:hover {
     text-align: left;
     position: relative;
     padding: 10px;
-    background: #2f4c81;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background: #1c2b3a;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
 }
 
 #logo_bloc {
@@ -85,86 +85,86 @@ a:hover {
 
 p {
     padding: 0 20px;
-    color: #d0d0d0;
+    color: #c0c0c0;
 }
 
 .tab_check {
     padding: 10px;
     background-color: #ffffff;
-    color: #333;
+    color: #1c1c1c;
     border-radius: 6px;
 }
 
 .tab_check th {
     font-size: 14px;
     font-weight: bold;
-    color: #1b2f62;
+    color: #101820;
 }
 
 .tab_check td {
     font-size: 12px;
     border-bottom: 1px solid #ccc;
-    color: #444;
+    color: #333;
 }
 
 .tab_check td i.fas,
 .tab_check td i.fa-solid {
     font-size: 12px;
     margin-right: 3px;
-    color: #ffaa00;
+    color: #e3a008;
 }
 
 .red, .migred {
     color: #fff;
-    background-color: #e74c3c;
+    background-color: #ff5a5f;
 }
 
 .missing {
-    color: #ffaa00;
+    color: #ffc23d;
 }
 
 .green {
-    color: #2ecc71;
+    color: #4caf50;
 }
 
 h2 {
     text-align: center;
-    color: #ffaa00;
+    color: #e3a008;
 }
 
 h3 {
     text-align: center;
-    color: #f5f5f5;
+    color: #f0f0f0;
 }
 
 .block {
     display: inline-block;
     width: 300px;
-    color: #f5f5f5;
+    color: #f0f0f0;
 }
 
 .license-container {
     width: 575px;
 
     textarea {
-        color: #333;
-        background-color: #fdfdfd;
+        color: #1c1c1c;
+        background-color: #f9f9f9;
         padding: 10px;
         border-radius: 6px;
     }
 }
 
 .alert:not(.alert-important) {
-    color: #1b2f62;
-    background-color: #ffedcc;
+    color: #101820;
+    background-color: #fff3e0;
 }
 
 .form-selectgroup-boxes .form-selectgroup-label {
-    color: #1b2f62;
+    color: #101820;
 }
 
 .form-control {
-    color: #1b2f62 !important;
+    color: #101820 !important;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -173,7 +173,7 @@ h3 {
 .popover.validation-messages {
     max-width: none;
     white-space: nowrap;
-    background-color: #ffe8e8;
-    color: #a94442;
+    background-color: #fff0f0;
+    color: #b00020;
 }
 
