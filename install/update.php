@@ -224,7 +224,7 @@ echo "</head>";
 echo "<body>";
 echo "<div id='principal'>";
 echo "<div id='bloc'>";
-//echo "<div id='logo_bloc'></div>";
+echo "<div id='logo_bloc'></div>";
 echo "<h2>MiDesk SETUP</h2>";
 echo "<br><h3>" . __('Upgrade') . "</h3>";
 
