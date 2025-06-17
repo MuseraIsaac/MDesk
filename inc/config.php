@@ -82,7 +82,7 @@ if ($missing_db_config) {
     Session::loadLanguage('', false);
 
     // no translation
-    $title_text        = 'GLPI seems to not be configured properly.';
+    $title_text        = 'MiDesk seems to not be configured properly.';
     $missing_conf_text = sprintf('Database configuration file "%s" is missing or is corrupted.', GLPI_CONFIG_DIR . '/config_db.php');
     $hint_text         = 'You have to either restart the install process, either restore this file.';
 
@@ -207,7 +207,7 @@ if ($missing_db_config) {
         Session::loadLanguage('', false);
 
         if (isCommandLine()) {
-            echo __('The GLPI codebase has been updated. The update of the GLPI database is necessary.');
+            echo __('The MiDesk codebase has been updated. The update of the MiDesk database is necessary.');
             echo "\n";
             exit();
         }
@@ -251,7 +251,7 @@ if ($missing_db_config) {
                         echo Config::agreeUnstableMessage(VersionParser::isDevVersion(GLPI_VERSION));
                     }
                     echo "<p class='mt-2 mb-n2 alert alert-important alert-warning'>";
-                    echo __('The GLPI codebase has been updated. The update of the GLPI database is necessary.') . "</p>";
+                    echo __('The MiDesk codebase has been updated. The update of the MiDesk database is necessary.') . "</p>";
                     echo Html::submit(_sx('button', 'Upgrade'), [
                         'name'  => 'from_update',
                         'class' => "btn btn-primary",
@@ -260,7 +260,7 @@ if ($missing_db_config) {
                     Html::closeForm();
                 } else {
                     echo "<p class='mt-2 mb-n2 alert alert-important alert-warning'>" .
-                        __('You are trying to use GLPI with outdated files compared to the version of the database. Please install the correct GLPI files corresponding to the version of your database.') . "</p>";
+                        __('You are trying to use MiDesk with outdated files compared to the version of the database. Please install the correct MiDesk files corresponding to the version of your database.') . "</p>";
                 }
             }
 
